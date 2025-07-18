@@ -6,11 +6,16 @@ export const Pricing = () => {
     <div className="container my-5 m-5">
       <div className="row align-items-center">
         {/* Left Text Section */}
-        <div className="col-md-5">
+        <div className="col-md-5" >
           <h1>Unbeatable pricing</h1>
           <p>
             We pioneered the concept of discount broking and price transparency
             in India. Flat fees and no hidden charges.
+          </p>
+          <p >
+            <a href="#pricing">
+              See Pricing <i className="fas fa-arrow-right ms-2"></i>
+            </a>
           </p>
         </div>
 
