@@ -1,14 +1,14 @@
 import logo1 from "../../assets/images/logo1.svg";
-
+import { Link } from "react-router-dom";
 export const Navbar = () => {
   return (
     <>
       <nav className="navbar navbar-expand-lg bg-white py-3">
         <div className="container">
           {/* Logo */}
-          <a className="navbar-brand" href="#">
+          <Link className="navbar-brand" to="/">
             <img src={logo1} alt="logo" style={{ height: "30px" }} />
-          </a>
+          </Link>
 
           {/* Toggler for mobile */}
           <button
@@ -30,25 +30,25 @@ export const Navbar = () => {
           >
             <ul className="navbar-nav align-items-center gap-3">
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <Link className="nav-link" to="/signup">
                   Signup
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <Link className="nav-link" to="/about">
                   About
-                </a>
+                </Link>
               </li>
               <li className="nav-item dropdown">
-                <a
+                <Link
                   className="nav-link "
-                  href="#"
+                  to="/product"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
                   Products
-                </a>
+                </Link>
                 {/* <ul className="dropdown-menu">
                   <li>
                     <a className="dropdown-item" href="#">
@@ -68,9 +68,9 @@ export const Navbar = () => {
                 </ul> */}
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <Link className="nav-link" to="/support">
                   Support
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
                 <i class="fa-solid fa-bars"></i>
