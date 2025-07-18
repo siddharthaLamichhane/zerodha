@@ -41,7 +41,7 @@ export const Navbar = () => {
               </li>
               <li className="nav-item dropdown">
                 <a
-                  className="nav-link dropdown-toggle"
+                  className="nav-link "
                   href="#"
                   role="button"
                   data-bs-toggle="dropdown"
@@ -49,7 +49,7 @@ export const Navbar = () => {
                 >
                   Products
                 </a>
-                <ul className="dropdown-menu">
+                {/* <ul className="dropdown-menu">
                   <li>
                     <a className="dropdown-item" href="#">
                       Kite
@@ -65,7 +65,7 @@ export const Navbar = () => {
                       Coin
                     </a>
                   </li>
-                </ul>
+                </ul> */}
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#">
@@ -73,9 +73,7 @@ export const Navbar = () => {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="btn btn-outline-primary btn-sm" href="#">
-                  Login
-                </a>
+                <i class="fa-solid fa-bars"></i>
               </li>
             </ul>
           </div>
