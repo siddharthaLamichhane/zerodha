@@ -2,7 +2,7 @@ export const Hero = () => {
   return (
     <>
       <div
-        className="container d-flex flex-column align-items-center "
+        className="container d-flex flex-column align-items-center  border-bottom mt-5"
         style={{ paddingTop: "100px", paddingBottom: "100px" }}
       >
         <h1>Zerodha Products</h1>
