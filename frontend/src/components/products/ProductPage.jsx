@@ -1,8 +1,8 @@
 // import appstorebadge from "../../../src/assets/images/products/appstorebadge.svg";
 // import googleplaybadge from "../../../src/assets/images/products/googleplaybadge.svg";
-// import landing from "../../../src/assets/images/products/landing.svg";
+import landing from "../../../src/assets/images/products/landing.svg";
 import productscoin from "../../../src/assets/images/products/productscoin.png";
-// import productsconsole from "../../../src/assets/images/products/products-console.png";
+import productsconsole from "../../../src/assets/images/products/products-console.png";
 import productskite from "../../../src/assets/images/products/productskite.png";
 // import tijori from "../../../src/assets/images/products/tijori.svg";
 import varsityproducts from "../../../src/assets/images/products/varsityproducts.png";
@@ -28,7 +28,16 @@ export const ProductPage = () => {
           <i className="fa fa-long-arrow-right" aria-hidden="true"></i>
         }
       />
-      <RightSection />
+      <RightSection
+        imageURL={productsconsole}
+        productName="Console"
+        productDescription="The central dashboard for your Zerodha account. Gain insights into your trades and investments with in-depth reports and visualisations.."
+        tryDemo="Try Demo "
+        learnMore="Learn More "
+        arrowIcon={
+          <i className="fa fa-long-arrow-right" aria-hidden="true"></i>
+        }
+      />
       <LeftSection
         imageURL={productscoin}
         productName="Coin"
@@ -41,7 +50,16 @@ export const ProductPage = () => {
           <i className="fa fa-long-arrow-right" aria-hidden="true"></i>
         }
       />
-      <RightSection />
+      <RightSection
+        imageURL={landing}
+        productName="Kite Connect API"
+        productDescription="Build powerful trading platforms and experiences with our super simple HTTP/JSON APIs. If you are a startup, build your investment app and showcase it to our clientbase."
+        tryDemo="Try Demo "
+        learnMore="Kite Connect "
+        arrowIcon={
+          <i className="fa fa-long-arrow-right" aria-hidden="true"></i>
+        }
+      />
       <LeftSection
         imageURL={varsityproducts}
         productName="Varsity mobile"
@@ -52,16 +70,9 @@ export const ProductPage = () => {
         appStore=""
         arrowIcon=""
       />
-      <RightSection />
+
       <Universe />
     </div>
   );
 };
 
-//  imageURL,
-//   productName,
-//   productDescription,
-//   tryDemo,
-//   learnMore,
-//   googlePlay,
-//   appStore,
