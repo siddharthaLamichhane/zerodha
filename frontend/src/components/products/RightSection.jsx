@@ -58,6 +58,7 @@ export const RightSection = ({
           />
         </div>
       </div>
+     
     </div>
   );
 };
