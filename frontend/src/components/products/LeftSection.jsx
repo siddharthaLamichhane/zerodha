@@ -16,6 +16,7 @@ export const LeftSection = ({
   learnMore,
   googlePlay,
   appStore,
+  arrowIcon,
 }) => {
   return (
     <>
@@ -35,20 +36,24 @@ export const LeftSection = ({
               >
                 {productDescription}
               </p>
-              <div className="p-3">
-                <a style={{ textDecoration: "none" }} href={tryDemo}>
-                  Try Demo{" "}
-                  <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-                </a>
-                <a
-                  href={learnMore}
-                  style={{ marginLeft: "50px", textDecoration: "none" }}
-                >
-                  Learn More{" "}
-                  <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-                </a>
+              <div className="mt-3 mb-3">
+                {tryDemo?.trim() && (
+                  <a style={{ textDecoration: "none" }} href={tryDemo}>
+                    {tryDemo}
+                    {arrowIcon}
+                  </a>
+                )}
+                {learnMore?.trim() && (
+                  <a
+                    href={learnMore}
+                    style={{ marginLeft: "50px", textDecoration: "none" }}
+                  >
+                    {learnMore}
+                    {arrowIcon}
+                  </a>
+                )}
               </div>
-              <div className="mt-3">
+              <div className="mt-3 gap-4">
                 <a href={googlePlay}>
                   <img src={googleplaybadge} />
                 </a>
