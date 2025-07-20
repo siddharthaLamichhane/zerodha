@@ -1,9 +1,9 @@
-import zerodhafundhouse from "../../../src/assets/images/products/zerodhafundhouse.png";
+// import zerodhafundhouse from "../../../src/assets/images/products/";
 import dittologo from "../../../src/assets/images/universal/dittologo.png";
 import sensibulllogo from "../../../src/assets/images/universal/sensibulllogo.svg";
 import smallcaselogo from "../../../src/assets/images/universal/smallcaselogo.png";
 import streaklogo from "../../../src/assets/images/universal/streaklogo.png";
-import tijori from "../../../src/assets/images/products/tijori.svg";
+// import tijori from "../../../src/assets/images/products/tijori.svg";
 
 export const Universe = () => {
   const imageStyle = {
@@ -13,9 +13,9 @@ export const Universe = () => {
   };
 
   const partners = [
-    { img: zerodhafundhouse, alt: "Zerodha Fund House" },
+    // { img: zerodhafundhouse, alt: "Zerodha Fund House" },
     { img: sensibulllogo, alt: "Sensibull" },
-    { img: tijori, alt: "Tijori" },
+    // { img: tijori, alt: "Tijori" },
     { img: smallcaselogo, alt: "Smallcase 1" },
     { img: streaklogo, alt: "Streak" },
     { img: dittologo, alt: "Ditto" },

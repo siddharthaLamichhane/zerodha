@@ -1,8 +1,8 @@
 // import appstorebadge from "../../../src/assets/images/products/appstorebadge.svg";
 // import googleplaybadge from "../../../src/assets/images/products/googleplaybadge.svg";
-import landing from "../../../src/assets/images/products/landing.svg";
+// import landing from "../../../src/assets/images/products/";
 import productscoin from "../../../src/assets/images/products/productscoin.png";
-import productsconsole from "../../../src/assets/images/products/products-console.png";
+// import productsconsole from "../../../src/assets/images/products/products-console.png";
 import productskite from "../../../src/assets/images/products/productskite.png";
 // import tijori from "../../../src/assets/images/products/tijori.svg";
 import varsityproducts from "../../../src/assets/images/products/varsityproducts.png";
@@ -29,7 +29,7 @@ export const ProductPage = () => {
         }
       />
       <RightSection
-        imageURL={productsconsole}
+        imageURL={productskite}
         productName="Console"
         productDescription="The central dashboard for your Zerodha account. Gain insights into your trades and investments with in-depth reports and visualisations.."
         tryDemo="Try Demo "
@@ -51,7 +51,7 @@ export const ProductPage = () => {
         }
       />
       <RightSection
-        imageURL={landing}
+        imageURL={productscoin}
         productName="Kite Connect API"
         productDescription="Build powerful trading platforms and experiences with our super simple HTTP/JSON APIs. If you are a startup, build your investment app and showcase it to our clientbase."
         tryDemo="Try Demo "
