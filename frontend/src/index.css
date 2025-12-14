@@ -1,0 +1,9 @@
+#supportHero {
+    background: blue;
+}
+
+#supportWrapper {
+    display: flex;
+    justify-content: space-between;
+
+}

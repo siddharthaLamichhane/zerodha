@@ -1,118 +1,195 @@
 export const CreateTicket = () => {
   return (
-    <>
-      <div className="container ">
-        <div className="bg-light p-5">
-          <div className="d-flex justify-content-between align-items-center ">
-            <h1>Support Portal</h1>
-            <button className="btn btn-primary">
-              {" "}
-              <i class="fa fa-gg-circle" aria-hidden="true"></i> My Ticket
-            </button>
-          </div>
-          <input
-            className="border shadow p-3 mb-5 bg-white rounded form-control"
-            type="text"
-            placeholder="e.g. search something"
-            style={{ marginTop: "50px" }}
-          />
+    <div className="container">
+      <div className="row mt-5 mb-5">
+        <h1 className="px-5">To create a ticket ,select a relevent topic</h1>
+        <div className="col-4 p-5">
+          <h4>
+            <i className="fa fa-plus-circle me-2" aria-hidden="true"></i>
+            Account Opening
+          </h4>
+
+          <a href="#" style={linkStyle}>
+            Online Account Opening
+          </a>
+          <br />
+
+          <a href="#" style={linkStyle}>
+            Offline Account Opening
+          </a>
+          <br />
+
+          <a href="#" style={linkStyle}>
+            Company, Partnership and HUF Account
+          </a>
+          <br />
+
+          <a href="#" style={linkStyle}>
+            NRI Account Opening
+          </a>
+          <br />
+
+          <a href="#" style={linkStyle}>
+            NRI Account Opening
+          </a>
         </div>
-        <div>
-          <div>
-            <h5>How do I withdraw funds from Zerodha?</h5>
-            <p className="text-muted" style={{ fontSize: "0.9rem" }}>
-              You can withdraw funds via your linked bank account by logging
-              into your Zerodha Console and requesting withdrawal under the
-              funds section.
-            </p>
-          </div>
-          <hr />
-          <div>
-            <h5>What are the brokerage charges for intraday trading?</h5>
-            <p className="text-muted" style={{ fontSize: "0.9rem" }}>
-              For intraday trading, Zerodha charges a flat ₹20 or 0.03%
-              (whichever is lower) per executed order.
-            </p>
-          </div>
-          <hr />
-          <div>
-            <h5>How do I reset my account password?</h5>
-            <p className="text-muted" style={{ fontSize: "0.9rem" }}>
-              Click on the ‘Forgot Password’ link on the login page, and follow
-              the instructions sent to your registered email.
-            </p>
-          </div>
+        <div className="col-4 p-5">
+          <h4>
+            <i className="fa fa-plus-circle me-2" aria-hidden="true"></i>
+            Account Opening
+          </h4>
+
+          <a href="#" style={linkStyle}>
+            Online Account Opening
+          </a>
+          <br />
+
+          <a href="#" style={linkStyle}>
+            Offline Account Opening
+          </a>
+          <br />
+
+          <a href="#" style={linkStyle}>
+            Company, Partnership and HUF Account
+          </a>
+          <br />
+
+          <a href="#" style={linkStyle}>
+            NRI Account Opening
+          </a>
+          <br />
+
+          <a href="#" style={linkStyle}>
+            NRI Account Opening
+          </a>
         </div>
+        <div className="col-4 p-5">
+          <h4>
+            <i className="fa fa-plus-circle me-2" aria-hidden="true"></i>
+            Account Opening
+          </h4>
 
-        {/* Contact Support Section */}
-        <div
-          className="col-12 col-md-5 p-4 bg-light border rounded shadow-sm"
-          style={{ minHeight: "400px" }}
-        >
-          <h3 className="mb-4" style={{ fontWeight: "600" }}>
-            Contact Support
-          </h3>
+          <a href="#" style={linkStyle}>
+            Online Account Opening
+          </a>
+          <br />
 
-          <p className="text-muted" style={{ fontSize: "0.9rem" }}>
-            If you can’t find the answer you’re looking for, reach out to us:
-          </p>
+          <a href="#" style={linkStyle}>
+            Offline Account Opening
+          </a>
+          <br />
 
-          <div className="mb-3">
-            <label
-              htmlFor="name"
-              className="form-label"
-              style={{ fontWeight: "500" }}
-            >
-              Name
-            </label>
-            <input
-              id="name"
-              type="text"
-              className="form-control"
-              placeholder="Your full name"
-            />
-          </div>
+          <a href="#" style={linkStyle}>
+            Company, Partnership and HUF Account
+          </a>
+          <br />
 
-          <div className="mb-3">
-            <label
-              htmlFor="email"
-              className="form-label"
-              style={{ fontWeight: "500" }}
-            >
-              Email address
-            </label>
-            <input
-              id="email"
-              type="email"
-              className="form-control"
-              placeholder="you@example.com"
-            />
-          </div>
+          <a href="#" style={linkStyle}>
+            NRI Account Opening
+          </a>
+          <br />
 
-          <div className="mb-3">
-            <label
-              htmlFor="issue"
-              className="form-label"
-              style={{ fontWeight: "500" }}
-            >
-              Describe your issue
-            </label>
-            <textarea
-              id="issue"
-              rows="4"
-              className="form-control"
-              placeholder="Please provide details"
-            ></textarea>
-          </div>
+          <a href="#" style={linkStyle}>
+            NRI Account Opening
+          </a>
+        </div>
+        <div className="col-4 p-5">
+          <h4>
+            <i className="fa fa-plus-circle me-2" aria-hidden="true"></i>
+            Account Opening
+          </h4>
 
-          <button
-            className="btn btn-primary w-100"
-            style={{ fontWeight: "600" }}
-          >
-            Submit Ticket
-          </button>
+          <a href="#" style={linkStyle}>
+            Online Account Opening
+          </a>
+          <br />
+
+          <a href="#" style={linkStyle}>
+            Offline Account Opening
+          </a>
+          <br />
+
+          <a href="#" style={linkStyle}>
+            Company, Partnership and HUF Account
+          </a>
+          <br />
+
+          <a href="#" style={linkStyle}>
+            NRI Account Opening
+          </a>
+          <br />
+
+          <a href="#" style={linkStyle}>
+            NRI Account Opening
+          </a>
+        </div>
+        <div className="col-4 p-5">
+          <h4>
+            <i className="fa fa-plus-circle me-2" aria-hidden="true"></i>
+            Account Opening
+          </h4>
+
+          <a href="#" style={linkStyle}>
+            Online Account Opening
+          </a>
+          <br />
+
+          <a href="#" style={linkStyle}>
+            Offline Account Opening
+          </a>
+          <br />
+
+          <a href="#" style={linkStyle}>
+            Company, Partnership and HUF Account
+          </a>
+          <br />
+
+          <a href="#" style={linkStyle}>
+            NRI Account Opening
+          </a>
+          <br />
+
+          <a href="#" style={linkStyle}>
+            NRI Account Opening
+          </a>
+        </div>
+        <div className="col-4 p-5">
+          <h4>
+            <i className="fa fa-plus-circle me-2" aria-hidden="true"></i>
+            Account Opening
+          </h4>
+
+          <a href="#" style={linkStyle}>
+            Online Account Opening
+          </a>
+          <br />
+
+          <a href="#" style={linkStyle}>
+            Offline Account Opening
+          </a>
+          <br />
+
+          <a href="#" style={linkStyle}>
+            Company, Partnership and HUF Account
+          </a>
+          <br />
+
+          <a href="#" style={linkStyle}>
+            NRI Account Opening
+          </a>
+          <br />
+
+          <a href="#" style={linkStyle}>
+            NRI Account Opening
+          </a>
         </div>
       </div>
-    </>
+    </div>
   );
+};
+
+const linkStyle = {
+  textDecoration: "none",
+  lineHeight: "2.5",
+  display: "inline-block",
 };
