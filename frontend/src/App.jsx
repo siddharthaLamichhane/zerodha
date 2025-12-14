@@ -5,7 +5,7 @@ import { Signup } from "./components/signup/Signup.jsx";
 import { AboutPage } from "./components/about/AboutPage.jsx";
 import { SupportPage } from "./components/support/SupportPage.jsx";
 import { ProductPage } from "./components/products/ProductPage.jsx";
-import {PricingPage} from "./components/pricing/PricingPage.jsx"
+import { PricingPage } from "./components/pricing/PricingPage.jsx";
 import { NotFound } from "./NotFound.jsx";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
