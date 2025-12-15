@@ -1,6 +1,6 @@
 import React from "react";
 
-import { positions } from "../data/data";
+import { positions } from "../data/data.jsx";
 
 export const Positions = () => {
   return (

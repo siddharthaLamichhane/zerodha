@@ -1,16 +1,16 @@
 // import appstorebadge from "../../../src/assets/images/products/appstorebadge.svg";
 // import googleplaybadge from "../../../src/assets/images/products/googleplaybadge.svg";
 // import landing from "../../../src/assets/images/products/";
-import productscoin from "../../../src/assets/images/products/productscoin.png";
-// import productsconsole from "../../../src/assets/images/products/products-console.png";
-import productskite from "../../../src/assets/images/products/productskite.png";
-// import tijori from "../../../src/assets/images/products/tijori.svg";
-import varsityproducts from "../../../src/assets/images/products/varsityproducts.png";
+import productscoin from "../../assets/images/products/productscoin.png";
+// import productsconsole from "../../assets/images/products/products-console.png";
+import productskite from "../../assets/images/products/productskite.png";
+// import tijori from "../../assets/images/products/tijori.svg";
+import varsityproducts from "../../assets/images/products/varsityproducts.png";
 // import zerodhafundhouse from "../../../src/assets/images/products/zerodhafundhouse.png";
 
 import { Hero } from "./Hero.jsx";
-import { LeftSection } from "./Leftsection.jsx";
-import { RightSection } from "./Rightsection.jsx";
+import { LeftSection } from "./LeftSection.jsx";
+import { RightSection } from "./RightSection.jsx";
 import { Universe } from "./Universe.jsx";
 export const ProductPage = () => {
   return (

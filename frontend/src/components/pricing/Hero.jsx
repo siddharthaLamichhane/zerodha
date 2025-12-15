@@ -1,5 +1,5 @@
-import zero from "../../../src/assets/imagesP/1.svg";
-import twenty from "../../../src/assets/imagesP/20.svg";
+import zero from "../../assets/imagesP/1.svg";
+import twenty from "../../assets/imagesP/20.svg";
 
 export const Hero = () => {
   return (

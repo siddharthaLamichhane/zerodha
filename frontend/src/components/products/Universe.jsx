@@ -1,8 +1,8 @@
 // import zerodhafundhouse from "../../../src/assets/images/products/";
-import dittologo from "../../../src/assets/images/universal/dittologo.png";
-import sensibulllogo from "../../../src/assets/images/universal/sensibulllogo.svg";
-import smallcaselogo from "../../../src/assets/images/universal/smallcaselogo.png";
-import streaklogo from "../../../src/assets/images/universal/streaklogo.png";
+import dittologo from "../../assets/images/universal/dittologo.png";
+import sensibulllogo from "../../assets/images/universal/sensibulllogo.svg";
+import smallcaselogo from "../../assets/images/universal/smallcaselogo.png";
+import streaklogo from "../../assets/images/universal/streaklogo.png";
 // import tijori from "../../../src/assets/images/products/tijori.svg";
 
 export const Universe = () => {

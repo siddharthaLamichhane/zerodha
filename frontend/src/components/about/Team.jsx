@@ -1,4 +1,4 @@
-import nithinkamath from "../../../src/assets/images/nithinkamath.jpg";
+import nithinkamath from "../../assets/images/nithinkamath.jpg";
 import Circle from "./Circle.jsx";
 export const Team = () => {
   return (

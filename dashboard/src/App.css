@@ -646,6 +646,7 @@ hr {
   align-items: center;
   justify-content: space-evenly;
   position: relative;
+
 }
 
 .search {
@@ -655,7 +656,7 @@ hr {
   padding: 15px 20px;
   font-size: 0.9rem;
   font-weight: 400;
-  color: rgb(241, 241, 241);
+  color: black;
   border-bottom: 0.8px solid rgb(235, 234, 234);
 }
 

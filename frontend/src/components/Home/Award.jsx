@@ -1,5 +1,5 @@
-import ecosystem from "../../../src/assets/images/ecosystem.png";
-import presslogos from "../../../src/assets/images/presslogos.png";
+import ecosystem from "../../assets/images/ecosystem.png";
+import presslogos from "../../assets/images/presslogos.png";
 
 export const Award = () => {
   return (

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Logo from "../../public/logo.png";
+import Logo from "/logo.png";
 export const Menu = () => {
   return (
     <div className="menu-container">
@@ -27,7 +27,7 @@ export const Menu = () => {
             </Link>
           </li>
           <li>
-            <Link style={{ textDecoration: "none" }} to="funds">
+            <Link style={{ textDecoration: "none" }} to="/funds">
               <p className="">Funds</p>
             </Link>
           </li>
