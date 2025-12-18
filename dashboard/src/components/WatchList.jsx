@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import { watchlist } from "../data/data.jsx";
 export const WatchList = () => {
   const [search, setSearch] = useState("");
 
@@ -14,7 +14,7 @@ export const WatchList = () => {
           className="search"
         />
 
-        <span className="counts">0 / 50</span>
+        <span className="counts">{watchlist.length}/ 50</span>
       </div>
       <ul className="list"></ul>
     </div>
