@@ -13,6 +13,6 @@ app.get("/", (req, res) => {
 app.listen(process.env.PORT, () => {
   mongoose.connect(process.env.MONGO_URL);
 
-  console.log(process.env.MONGO_URL);
+  console.log("DB Connected");
   console.log(`app listening ${process.env.PORT} `);
 });
