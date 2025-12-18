@@ -43,5 +43,5 @@ This project includes a **separate frontend and dashboard client** with JWT-base
 
 ### Clone Repository
 
-git clone https://github.com/your-username/zerodha-clone.git
+git clone https://github.com/siddharthaLamichhane/zerodha
 cd zerodha
