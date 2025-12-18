@@ -1,4 +1,4 @@
 import { model } from "mongoose";
-import { PositionSchema } from "../schemas/PositionsSchema.js";
+import { PositionsSchema } from "../schemas/PositionsSchema.js";
 
-export const PositionModel = model("position", PositionSchema);
+export const PositionModel = model("position", PositionsSchema);
