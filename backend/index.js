@@ -1,34 +1,48 @@
 import express from "express";
-import { HoldingModel } from "./models/HoldingModel.js";
-import { PositionModel } from "./models/PositionsModel.js";
-import bodyParser from "body-parser";
+import mongoose from "mongoose";
 import cors from "cors";
 import dotenv from "dotenv";
+import cookieParser from "cookie-parser";
+
+import { router } from "./Routes/AuthRoute.js";
+import { HoldingModel } from "./models/HoldingModel.js";
+import { PositionModel } from "./models/PositionsModel.js";
+
 dotenv.config();
-import mongoose from "mongoose";
+
 const app = express();
-app.use(bodyParser());
-app.use(cors());
-app.use(bodyParser.json());
+const { MONGO_URL, PORT } = process.env;
+
+app.use(express.json());
+app.use(cookieParser());
+
+app.use(
+  cors({
+    origin: "http://localhost:3000",
+    credentials: true,
+  })
+);
+
+app.use("/api/auth", router);
 
 app.get("/allholdings", async (req, res) => {
-  let allholding = await HoldingModel.find({});
+  const allholding = await HoldingModel.find({});
   res.json(allholding);
 });
+
 app.get("/allpositions", async (req, res) => {
-  let allpositions = await PositionModel.find({});
+  const allpositions = await PositionModel.find({});
   res.json(allpositions);
 });
 
 app.get("/", (req, res) => {
-  res.json({
-    message: "Hello from app",
-  });
+  res.json({ message: "Hello from app" });
 });
 
-app.listen(process.env.PORT, () => {
-  mongoose.connect(process.env.MONGO_URL);
-
-  console.log("DB Connected");
-  console.log(`app listening ${process.env.PORT} `);
-});
+mongoose
+  .connect(MONGO_URL)
+  .then(() => {
+    console.log("MongoDB connected");
+    app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+  })
+  .catch((err) => console.error(err));

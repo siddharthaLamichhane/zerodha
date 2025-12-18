@@ -7,3 +7,136 @@
     justify-content: space-between;
 
 }
+
+/* ===== AUTH PAGES (LOGIN & SIGNUP) ===== */
+
+.auth-page {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg,
+            #020024 0%,
+            #8fbbcc 40%,
+            #00d4ff 100%);
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Card */
+.auth-page>h2 {
+    display: none;
+    /* keep heading inside card only */
+}
+
+.auth-page form {
+    background-color: #ffffff;
+    padding: 2.5rem 3rem;
+    border-radius: 14px;
+    width: 100%;
+    max-width: 420px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Title */
+.auth-page form::before {
+    content: attr(data-title);
+    display: block;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #00bcd4;
+    text-align: center;
+    margin-bottom: 1.8rem;
+}
+
+/* Form layout */
+.auth-page form>div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.4rem;
+}
+
+/* Labels */
+.auth-page label {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 0.3rem;
+}
+
+/* Inputs */
+.auth-page input {
+    padding: 0.6rem 0.2rem;
+    font-size: 1rem;
+    border: none;
+    border-bottom: 2px solid #d0d0d0;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.auth-page input:focus {
+    border-bottom-color: #00bcd4;
+}
+
+.auth-page input::placeholder {
+    color: #aaa;
+    font-size: 0.9rem;
+}
+
+/* Button */
+.auth-page button {
+    margin-top: 0.5rem;
+    background: linear-gradient(135deg, #00bcd4, #0097a7);
+    color: #ffffff;
+    border: none;
+    padding: 0.7rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.auth-page button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 188, 212, 0.4);
+}
+
+/* Links */
+.auth-page span {
+    display: block;
+    text-align: center;
+    margin-top: 1.2rem;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.auth-page span a {
+    color: #00bcd4;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.auth-page span a:hover {
+    text-decoration: underline;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .auth-page form {
+        padding: 2rem 1.8rem;
+    }
+}

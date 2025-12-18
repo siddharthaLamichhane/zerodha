@@ -3,16 +3,15 @@ import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 
-export const Signup = () => {
+export const Login = () => {
   const navigate = useNavigate();
 
   const [inputValue, setInputValue] = useState({
     email: "",
     password: "",
-    username: "",
   });
 
-  const { email, password, username } = inputValue;
+  const { email, password } = inputValue;
 
   const handleOnChange = (e) => {
     const { name, value } = e.target;
@@ -25,18 +24,18 @@ export const Signup = () => {
   const handleError = (msg) => toast.error(msg, { position: "bottom-left" });
 
   const handleSuccess = (msg) =>
-    toast.success(msg, { position: "bottom-right" });
+    toast.success(msg, { position: "bottom-left" });
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    if (!email || !password || !username) {
+    if (!email || !password) {
       return handleError("All fields are required");
     }
 
     try {
       const { data } = await axios.post(
-        "http://localhost:4000/api/auth/signup",
+        "http://localhost:4000/api/auth/login",
         inputValue,
         { withCredentials: true }
       );
@@ -54,13 +53,12 @@ export const Signup = () => {
     setInputValue({
       email: "",
       password: "",
-      username: "",
     });
   };
 
   return (
     <div className="auth-page">
-      <h2>Signup Account</h2>
+      <h2>Login Account</h2>
 
       <form onSubmit={handleSubmit}>
         <div>
@@ -70,18 +68,6 @@ export const Signup = () => {
             name="email"
             value={email}
             placeholder="Enter your email"
-            onChange={handleOnChange}
-            required
-          />
-        </div>
-
-        <div>
-          <label>Username</label>
-          <input
-            type="text"
-            name="username"
-            value={username}
-            placeholder="Enter your username"
             onChange={handleOnChange}
             required
           />
@@ -102,7 +88,7 @@ export const Signup = () => {
         <button type="submit">Submit</button>
 
         <span>
-          Already have an account? <Link to="/login">Login</Link>
+          Don’t have an account? <Link to="/signup">Signup</Link>
         </span>
       </form>
 
