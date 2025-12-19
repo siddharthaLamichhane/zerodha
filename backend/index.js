@@ -18,7 +18,7 @@ app.use(cookieParser());
 
 app.use(
   cors({
-    origin: "http://localhost:3000",
+    origin: ["http://localhost:3000", "http://localhost:5173", "http://localhost:5174"],
     credentials: true,
   })
 );
@@ -26,8 +26,14 @@ app.use(
 app.use("/api/auth", router);
 
 app.get("/allholdings", async (req, res) => {
-  const allholding = await HoldingModel.find({});
-  res.json(allholding);
+  try {
+    const allholding = await HoldingModel.find({});
+    console.log("Holdings from DB:", allholding);
+    res.json(allholding);
+  } catch (error) {
+    console.error("Error fetching holdings:", error);
+    res.status(500).json({ error: "Failed to fetch holdings", message: error.message });
+  }
 });
 
 app.get("/allpositions", async (req, res) => {

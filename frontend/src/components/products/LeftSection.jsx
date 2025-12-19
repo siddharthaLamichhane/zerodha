@@ -1,5 +1,5 @@
-import appstorebadge from "../../assets/images/products/appstorebadge.svg";
-import googleplaybadge from "../../assets/images/products/googleplaybadge.svg";
+import appstorebadge from "../../../src/assets/images/products/appstorebadge.svg";
+import googleplaybadge from "../../../src/assets/images/products/googleplaybadge.svg";
 // import landing from "../../../src/assets/images/products/landing.svg";
 // import productscoin from "../../../src/assets/images/products/productscoin.png";
 // import productsconsole from "../../../src/assets/images/products/productsconsole.png";
